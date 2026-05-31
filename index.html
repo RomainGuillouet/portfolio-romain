@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Romain Guillouet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#formations">Formation</a></li>
+                <li><a href="#competences">Compétences</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="accueil">
+        <div class="header-container">
+            <h1>Romain Guillouet</h1>
+            <p class="subtitle">Étudiant en Informatique — Spécialité Réalisation &amp; Gestion de Données</p>
+            <div class="intro-box">
+                <p style="margin-bottom: 15px;">Actuellement en formation en informatique, je développe des compétences solides axées sur le développement et le cycle de vie des applications. Mon objectif est de décrocher un <strong>contrat d'alternance</strong> ou un <strong>stage</strong> dans le domaine du développement logiciel ou de la gestion de données, afin de mettre mes compétences techniques au service de projets concrets.</p>
+                <a href="https://canva.link/il9dp4b6wv0q732" target="_blank" style="display: inline-block; background-color: var(--accent-color); color: #ffffff; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.95rem; transition: background 0.2s;">📄 Consulter mon CV en ligne →</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="section-banner" id="formations">
+        <div class="banner-container">
+            <h2>Diplômes et Formation</h2>
+            <a href="#competences" class="banner-jump-btn">Aller aux Compétences ↓</a>
+        </div>
+    </div>
+
+    <section>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="time-meta">2025 - Présent</div>
+                <div class="time-content">
+                    <h3>BUT Informatique (Bachelor Universitaire de Technologie)</h3>
+                    <p class="institution">IUT de Lannion — Première année (Niveau 1)</p>
+                    <p>Suivi des parcours spécialisés : <strong>Parcours A</strong> (Réalisation d’applications) et <strong>Parcours C</strong> (Administration, gestion et exploitation des données).</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="time-meta">2025</div>
+                <div class="time-content">
+                    <h3>Baccalauréat Général</h3>
+                    <p class="institution">Lycée Frédéric Ozanam — Mention Assez Bien</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="time-meta">2022</div>
+                <div class="time-content">
+                    <h3>Diplôme National du Brevet</h3>
+                    <p class="institution">Collège Sainte-Croix — Mention Très Bien</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-banner" id="competences">
+        <div class="banner-container">
+            <h2>Mes 6 Compétences Clés (Niveau 1)</h2>
+            <a href="#formations" class="banner-jump-btn">Retour aux Formations ↑</a>
+        </div>
+    </div>
+
+    <section>
+        <p class="section-intro">Chaque carte ci-dessous est cliquable pour afficher la démonstration de mes compétences selon la méthode STAR (Projets, UE et Livrables).</p>
+        
+        <div class="skills-grid">
+            
+            <!-- COMPÉTENCE 1 -->
+            <details class="skill-fullscreen-wrapper" id="c1">
+                <summary class="skill-master-card">
+                    <span class="skill-number">01</span>
+                    <div class="skill-master-text">
+                        <h3>Réaliser (Développement d'application)</h3>
+                        <p>Sokoban Interactif en Terminal (Langage C) — Gestion d'historique et moteur logique.</p>
+                    </div>
+                    <span class="open-link">Voir la méthode STAR →</span>
+                </summary>
+                <div class="fullscreen-detail-overlay">
+                    <div class="detail-card">
+                        <div class="detail-card-header">
+                            <h2><span class="accent-bar"></span>Compétence 1 : Réaliser</h2>
+                            <div class="header-actions">
+                                <span class="nav-arrow-btn" onclick="event.preventDefault(); this.closest('details').removeAttribute('open'); document.getElementById('c6').setAttribute('open', 'true');">◀ Précédent</span>
+                                <span class="nav-arrow-btn" onclick="event.preventDefault(); this.closest('details').removeAttribute('open'); document.getElementById('c2').setAttribute('open', 'true');">Suivant ▶</span>
+                                <span class="close-cross" onclick="this.closest('details').removeAttribute('open');">✕</span>
+                            </div>
+                        </div>
+                        
+                        <p class="detail-desc-box">Développer des applications informatiques simples. Concevoir, coder, tester et intégrer une solution informatique pour un client.</p>
+                        
+                        <div class="detail-block">
+                            <h4>Enseignements &amp; UE associés</h4>
+                            <div class="tag-container">
+                                <span class="module-tag">R1.01</span><span class="module-tag">R2.01</span><span class="module-tag">R2.02</span><span class="module-tag">S1.01</span><span class="module-tag">S1.05</span><span class="module-tag">SAE 1.01</span><span class="module-tag">SAE 1.02</span>
+                            </div>
+                        </div>
+
+                        <div class="detail-block">
+                            <h4>Démonstration par la méthode STAR</h4>
+                            <div class="star-container">
+                                <div class="star-row">
+                                    <span class="star-badge badge-s">S</span>
+                                    <div class="star-text"><strong>Situation :</strong> Dans le cadre d’une SAE de premier semestre en BUT Informatique, j'ai réalisé un jeu de Sokoban complet et interactif en langage C, s'exécutant entièrement au sein d'une interface en terminal.</div>
+                                </div>
+                                <div class="star-row">
+                                    <span class="star-badge badge-t">T</span>
+                                    <div class="star-text"><strong>Tâche :</strong> L'objectif était de concevoir un moteur de jeu logique fonctionnel où l'utilisateur contrôle le personnage en temps réel[cite: 2]. Le programme devait gérer les déplacements au clavier, les collisions, mais aussi intégrer des fonctionnalités de confort : l'annulation de coups (<em>Undo</em> / <em>Redo</em>), la réinitialisation de la partie (<em>Restart</em>) et une option pour modifier l'échelle d'affichage à la volée (<em>Zoom</em>)[cite: 2].</div>
+                                </div>
+                                <div class="star-row">
+                                    <span class="star-badge badge-a">A</span>
+                                    <div class="star-text">
+                                        <strong>Action :</strong>
+                                        <ul>
+                                            <li><em>Modélisation console :</em> J'ai géré la grille de jeu à l'aide de tableaux dynamiques bidimensionnels et conçu des fonctions de rafraîchissement d'affichage[cite: 1, 2].</li>
+                                            <li><em>Algorithme d'historique :</em> J'ai implémenté une structure de <strong>pile (LIFO)</strong> pour stocker l'état des mouvements précédents à chaque coup valide, permettant au joueur de revenir en arrière (<em>Undo/Redo</em>)[cite: 2].</li>
+                                            <li><em>Fonctions de confort :</em> J'ai codé la capture des entrées clavier en temps réel pour déclencher le <em>Restart</em> et le <em>Zoom</em> des caractères dans le terminal[cite: 2].</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="star-row">
+                                    <span class="star-badge badge-r">R</span>
+                                    <div class="star-text"><strong>Résultat :</strong> Le projet a abouti à une application interactive stable et fluide[cite: 1]. L'utilisation concrète des structures de données (piles) a démontré ma capacité à concevoir une application console simple répondant à un cahier des charges axé sur l'expérience utilisateur[cite: 1, 2].</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="detail-block">
+                            <h4>Traces &amp; Livrables associés</h4>
+                            <ul class="proof-list">
+                                <li style="margin-bottom: 8px;"><strong>Dépôt GitHub du Code Source :</strong> <a href="https://github.com/RomainGuillouet/sokoban2" target="_blank" style="color: var(--accent-color); font-weight: 600; text-decoration: underline;">Dépôt officiel — sokoban2</a></li>
+                                <li>Fichiers de programmation principaux : <code>sokoban.c</code> et <code>sokobanV2Final (1).c</code> consultables sur le dépôt[cite: 1, 2].</li>
+                                <li>Dossier de conception d'interface et d'architecture.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </details>
+
+            <!-- COMPÉTENCE 2 -->
+            <details class="skill-fullscreen-wrapper" id="c2">
+                <summary class="skill-master-card">
+                    <span class="skill-number">02</span>
+                    <div class="skill-master-text">
+                        <h3>Optimiser (Applications informatiques)</h3>
+                        <p>Interpréteur de Mouvements &amp; Optimiseur de Trajectoires — Algorithmes d'analyse, détection de boucles cycliques et réduction de fichiers de déplacements.</p>
+                    </div>
+                    <span class="open-link">Voir la méthode STAR →</span>
+                </summary>
+                <div class="fullscreen-detail-overlay">
+                    <div class="detail-card">
+                        <div class="detail-card-header">
+                            <h2><span class="accent-bar"></span>Compétence 2 : Optimiser</h2>
+                            <div class="header-actions">
+                                <span class="nav-arrow-btn" onclick="event.preventDefault(); this.closest('details').removeAttribute('open'); document.getElementById('c1').setAttribute('open', 'true');">◀ Précédent</span>
+                                <span class="nav-arrow-btn" onclick="event.preventDefault(); this.closest('details').removeAttribute('open'); document.getElementById('c3').setAttribute('open', 'true');">Suivant ▶</span>
+                                <span class="close-cross" onclick="this.closest('details').removeAttribute('open');">✕</span>
+                            </div>
+                        </div>
+                        
+                        <p class="detail-desc-box">Appréhender et construire des algorithmes. Proposer des applications informatiques optimisées en fonction de critères spécifiques (temps d'exécution, ressources, taille des données).</p>
+                        
+                        <div class="detail-block">
+                            <h4>Enseignements &amp; UE associés</h4>
+                            <div class="tag-container">
+                                <span class="module-tag">R1.01</span><span class="module-tag">R1.03</span><span class="module-tag">S1.01</span><span class="module-tag">S1.02</span><span class="module-tag">S2.02</span><span class="module-tag">SAE 1.01</span>
+                            </div>
+                        </div>
+
+                        <div class="detail-block">
+                            <h4>Démonstration par la méthode STAR</h4>
+                            <div class="star-container">
+                                <div class="star-row">
+                                    <span class="star-badge badge-s">S</span>
+                                    <div class="star-text"><strong>Situation :</strong> Dans le cadre du développement de notre moteur de jeu Sokoban, l'application devait initialement enregistrer l'historique complet des entrées utilisateur[cite: 2]. Cependant, les fichiers de relecture (`.dep`) générés contenaient de nombreuses trajectoires inefficaces et des actions redondantes (comme des déplacements de va-et-vient inutiles sans pousser de caisses)[cite: 1, 2].</div>
+                                </div>
+                                <div class="star-row">
+                                    <span class="star-badge badge-t">T</span>
+                                    <div class="star-text"><strong>Tâche :</strong> L'enjeu était de concevoir un algorithme d'optimisation automatisé capable de lire un fichier de commandes brutes, de simuler la partie sur le plateau, et de réécrire une séquence de jeu minimale épurée de toutes ses boucles cycliques afin de minimiser le poids du fichier de sauvegarde final[cite: 1].</div>
+                                </div>
+                                <div class="star-row">
+                                    <span class="star-badge badge-a">A</span>
+                                    <div class="star-text">
+                                        <strong>Action :</strong> J'ai développé et intégré un module d'optimisation en langage C (`jouer_et_optimiser`) basé sur l'analyse dynamique des coordonnées du personnage[cite: 1] :
+                                        <ul>
+                                            <li><em>Structure de données dédiée :</em> J'ai mis en place une structure `t_SequenceOptimisee` pour suivre en temps réel la liste des coups retenus et la pile des coordonnées correspondantes (`cheminParcouru`)[cite: 1].</li>
+                                            <li><em>Algorithme d'élagage (Backtracking sur position) :</em> Lors des déplacements simples (sans poussée de caisse), le script vérifie à chaque pas si la nouvelle position a déjà été visitée depuis la dernière poussée de caisse[cite: 1]. Si la position est détectée dans l'historique (`indexRetourArriere != -1`), le programme identifie une boucle inutile, recule instantanément son pointeur (`nbCoupsRetenus`) à cet index, élaguant ainsi automatiquement toute la trajectoire cyclique superflue[cite: 1].</li>
+                                            <li><em>Préservation des états critiques :</em> Dès qu'un coup engendre une poussée de caisse valide (caractère en majuscule), le coup est définitivement verrouillé et sert de nouvelle référence absolue pour les analyses de boucles suivantes (`indexDernierePoussee`)[cite: 1].</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="star-row">
+                                    <span class="star-badge badge-r">R</span>
+                                    <div class="star-text"><strong>Résultat :</strong> L'approche logicielle garantit une réduction significative de la taille des données[cite: 1]. Pour une solution valide, l'application affiche le bilan comparatif entre les caractères initiaux et optimisés, puis écrit proprement la suite épurée dans un fichier physique[cite: 1]. Ce projet valide ma capacité à analyser la complexité d'un parcours et à concevoir un algorithme d'optimisation de données performant[cite: 1].</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="detail-block">
+                            <h4>Traces &amp; Livrables associés</h4>
+                            <ul class="proof-list">
+                                <li style="margin-bottom: 8px;"><strong>Dépôt GitHub du Projet :</strong> <a href="https://github.com/RomainGuillouet/sokoban2" target="_blank" style="color: var(--accent-color); font-weight: 600; text-decoration: underline;">Dépôt officiel — sokoban2</a></li>
+                                <li>Fichiers implémentant les optimisations algorithmiques : <code>sokobanV2Final (1).c</code> (contenant la fonction <code>jouer_et_optimiser</code>)[cite: 1].</li>
+                                <li>Fichiers de trajectoires de test (.dep) avant et après traitement par l'algorithme[cite: 1].</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </details>
+
+            <!-- COMPÉTENCE 3 -->
+            <details class="skill-fullscreen-wrapper" id="c3">
+                <summary class="skill-master-card">
+                    <span class="skill-number">03</span>
+                    <div class="skill-master-text">
+                        <h3>Administrer (Systèmes informatiques)</h3>
+                        <p>Script Bash &amp; ImageMagick — Automatisation, contrôle de flux et standardisation d'images de catalogue web.</p>
+                    </div>
+                    <span class="open-link">Voir la méthode STAR →</span>
+                </summary>
+                <div class="fullscreen-detail-overlay">
+                    <div class="detail-card">
+                        <div class="detail-card-header">
+                            <h2><span class="accent-bar"></span>Compétence 3 : Administrer</h2>
+                            <div class="header-actions">
+                                <span class="nav-arrow-btn" onclick="event.preventDefault(); this.closest('details').removeAttribute('open'); document.getElementById('c2').setAttribute('open', 'true');">◀ Précédent</span>
+                                <span class="nav-arrow-btn" onclick="event.preventDefault(); this.closest('details').removeAttribute('open'); document.getElementById('c4').setAttribute('open', 'true');">Suivant ▶</span>
+                                <span class="close-cross" onclick="this.closest('details').removeAttribute('open');">✕</span>
+                            </div>
+                        </div>
+                        <p class="detail-desc-box">Installer et configurer un poste de travail. Maintenir en conditions opérationnelles les infrastructures, services et architectures réseau.</p>
+                        <div class="detail-block">
+                            <h4>Enseignements &amp; UE associés</h4>
+                            <div class="tag-container">
+                                <span class="module-tag">R1.04</span><span class="module-tag">R1.05</span><span class="module-tag">R2.05</span><span class="module-tag">S1.03</span><span class="module-tag">SAE 1.03</span>
+                            </div>
+                        </div>
+
+                        <div class="detail-block">
+                            <h4>Démonstration par la méthode STAR</h4>
+                            <div class="star-container">
+                                <div class="star-row">
+                                    <span class="star-badge badge-s">S</span>
+                                    <div class="star-text"><strong>Situation :</strong> Dans le cadre d'un projet système répondant au besoin d'un client qui souhaitait optimiser les performances de son site web, j'ai dû mettre en place un système d'automatisation du traitement des images de son catalogue. Les serveurs recevaient des fichiers aux formats variés (JPEG, GIF, etc.) et de dimensions non standardisées, ce qui impactait négativement le temps de chargement des pages.</div>
+                                </div>
+                                <div class="star-row">
+                                    <span class="star-badge badge-t">T</span>
+                                    <div class="star-text"><strong>Tâche :</strong> Ma mission consistait à concevoir un script d'automatisation capable de standardiser automatiquement un flux d'images (l'image Imagix). L'objectif était double : conformer les dimensions des images à une taille standard stricte (agrandir ou rétrécir selon le besoin) et uniformiser le format de fichier vers une extension moderne et optimisée.</div>
+                                </div>
+                                <div class="star-row">
+                                    <span class="star-badge badge-a">A</span>
+                                    <div class="star-text"><strong>Action :</strong> J'ai développé un script en langage Bash en utilisant les commandes du paquet ImageMagick. J'ai mis en place des structures conditionnelles (if/else) pour analyser les dimensions de chaque image entrante afin de les redimensionner automatiquement selon les standards requis. En parallèle, j'ai intégré une commande pour convertir automatiquement tous les formats d'origine vers le format WebP, garantissant une compression maximale sans perte de qualité.</div>
+                                </div>
+                                <div class="star-row">
+                                    <span class="star-badge badge-r">R</span>
+                                    <div class="star-text"><strong>Résultat :</strong> Grâce à cette automatisation, le client dispose d'un système fiable où 100 % des images sont standardisées et converties au format WebP dès leur réception. Cela permet de réduire drastiquement le poids des fichiers sur le serveur et d'accélérer le temps de chargement du site.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="detail-block">
+                            <h4>Livrables &amp; Traces</h4>
+                            <ul class="proof-list">
+                                <li style="margin-bottom: 8px;"><strong>Dépôt GitHub d'Infrastructure/Administration :</strong> <a href="https://github.com/RedFox65/Docker" target="_blank" style="color: var(--accent-color); font-weight: 600; text-decoration: underline;">Dépôt officiel — Docker</a></li>
+                                <li>Scripts d'automatisation Bash et configurations systèmes associés au projet.</li>
+                                <li>Schémas d'architectures réseaux et rapports de routage/adressage IP.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </details>
+
+            <!-- COMPÉTENCE 4 -->
+            <details class="skill-fullscreen-wrapper" id="c4">
+                <summary class="skill-master-card">
+                    <span class="skill-number">04</span>
+                    <div class="skill-master-text">
+                        <h3>Gérer (Données de l'information)</h3>
+                        <p>UML &amp; SQL — Modélisation logique de besoins métiers, écriture de scripts DDL/DML et injection de jeux de tests.</p>
+                    </div>
+                    <span class="open-link">Voir la méthode STAR →</span>
+                </summary>
+                <div class="fullscreen-detail-overlay">
+                    <div class="detail-card">
+                        <div class="detail-card-header">
+                            <h2><span class="accent-bar"></span>Compétence 4 : Gérer</h2>
+                            <div class="header-actions">
+                                <span class="nav-arrow-btn" onclick="event.preventDefault(); this.closest('details').removeAttribute('open'); document.getElementById('c3').setAttribute('open', 'true');">◀ Précédent</span>
+                                <span class="nav-arrow-btn" onclick="event.preventDefault(); this.closest('details').removeAttribute('open'); document.getElementById('c5').setAttribute('open', 'true');">Suivant ▶</span>
+                                <span class="close-cross" onclick="this.closest('details').removeAttribute('open');">✕</span>
+                            </div>
+                        </div>
+                        <p class="detail-desc-box">Concevoir et mettre en place une base de données relationnelle à partir d’un cahier des charges client.</p>
+                        <div class="detail-block">
+                            <h4>Enseignements &amp; UE associés</h4>
+                            <div class="tag-container">
+                                <span class="module-tag">R1.06</span><span class="module-tag">R2.06</span><span class="module-tag">SAE 1.04</span><span class="module-tag">SAE 2.04</span>
+                            </div>
+                        </div>
+
+                        <div class="detail-block">
+                            <h4>Démonstration par la méthode STAR</h4>
+                            <div class="star-container">
+                                <div class="star-row">
+                                    <span class="star-badge badge-s">S</span>
+                                    <div class="star-text"><strong>Situation :</strong> Dans le cadre de projets universitaires (SAÉ) simulant des demandes clients, j'ai été confronté au besoin de centraliser et structurer des données complexes pour des systèmes d'information. Le défi majeur était de partir d'exigences métiers brutes pour aboutir à une infrastructure de base de données relationnelle opérationnelle.</div>
+                                </div>
+                                <div class="star-row">
+                                    <span class="star-badge badge-t">T</span>
+                                    <div class="star-text"><strong>Tâche :</strong> Ma mission s'est articulée en deux étapes clés : d'une part, concevoir de bout en bout un modèle logique à partir d'un cahier des charges textuel, et d'autre part, traduire un modèle UML technique en tables relationnelles concrètes, avant d'y injecter et de manipuler un jeu de données de test.</div>
+                                </div>
+                                <div class="star-row">
+                                    <span class="star-badge badge-a">A</span>
+                                    <div class="star-text"><strong>Action :</strong> À partir des exigences du client, j'ai identifié les entités et les cardinalités pour concevoir un diagramme UML cohérent. J'ai ensuite traduit ce diagramme en un schéma relationnel physique en rédigeant les scripts SQL (DDL) pour créer les tables (définition des types, clés primaires et clés étrangères). Enfin, j'ai développé les scripts d'insertion SQL (DML) pour introduire des valeurs cohérentes afin de tester la robustesse de la base et simuler une utilisation en production.</div>
+                                </div>
+                                <div class="star-row">
+                                    <span class="star-badge badge-r">R</span>
+                                    <div class="star-text"><strong>Résultat :</strong> Le résultat final est une base de données relationnelle parfaitement fonctionnelle, conforme aux besoins du client et sémantiquement juste. Les contraintes d'intégrité intégrées garantissent la viabilité des données, validant ainsi tout le cycle de vie de la donnée, de sa modélisation abstraite à son exploitation concrète.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="detail-block">
+                            <h4>Livrables &amp; Traces</h4>
+                            <ul class="proof-list">
+                                <li style="margin-bottom: 8px;"><strong>Dépôt GitHub Relatif aux Bases de Données :</strong> <a href="https://github.com/Mael-Le-Doare/Creation_BDD_ParcourSup" target="_blank" style="color: var(--accent-color); font-weight: 600; text-decoration: underline;">Dépôt officiel — Creation_BDD_ParcourSup</a></li>
+                                <li>Modèles Conceptuels de Données (MCD), Schémas Relationnels (MLD) et diagrammes UML du projet.</li>
+                                <li>Scripts SQL de structure (DDL) et d'insertion de jeux de tests (DML).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </details>
+
+            <!-- COMPÉTENCE 5 -->
+            <details class="skill-fullscreen-wrapper" id="c5">
+                <summary class="skill-master-card">
+                    <span class="skill-number">05</span>
+                    <div class="skill-master-text">
+                        <h3>Conduire (Un projet)</h3>
+                        <p>Cadrage, Planification &amp; Agilité — Spécification des besoins, modélisation de la matrice RACI, planification et suivi de production sur Trello.</p>
+                    </div>
+                    <span class="open-link">Voir la méthode STAR →</span>
+                </summary>
+                <div class="fullscreen-detail-overlay">
+                    <div class="detail-card">
+                        <div class="detail-card-header">
+                            <h2><span class="accent-bar"></span>Compétence 5 : Conduire</h2>
+                            <div class="header-actions">
+                                <span class="nav-arrow-btn" onclick="event.preventDefault(); this.closest('details').removeAttribute('open'); document.getElementById('c4').setAttribute('open', 'true');">◀ Précédent</span>
+                                <span class="nav-arrow-btn" onclick="event.preventDefault(); this.closest('details').removeAttribute('open'); document.getElementById('c6').setAttribute('open', 'true');">Suivant ▶</span>
+                                <span class="close-cross" onclick="this.closest('details').removeAttribute('open');">✕</span>
+                            </div>
+                        </div>
+                        <p class="detail-desc-box">Identifier les besoins métiers des clients et des utilisateurs. Organiser et piloter un projet informatique avec des méthodologies adaptées.</p>
+                        <div class="detail-block">
+                            <h4>Enseignements &amp; UE associés</h4>
+                            <div class="tag-container">
+                                <span class="module-tag">R1.11</span><span class="module-tag">R2.11</span><span class="module-tag">SAE 1.05</span><span class="module-tag">SAE 2.05</span>
+                            </div>
+                        </div>
+
+                        <div class="detail-block">
+                            <h4>Démonstration par la méthode STAR</h4>
+                            <div class="star-container">
+                                <div class="star-row">
+                                    <span class="star-badge badge-s">S</span>
+                                    <div class="star-text"><strong>Situation :</strong> Dans le cadre d'un projet universitaire en équipe (SAÉ 1.05 / 2.05), nous devions concevoir une application web et ses prototypes de gestion métiers (produits, stocks, fournisseurs, ventes). Le point de départ nécessitait une phase rigoureuse de cadrage, d'organisation des rôles et de planification des tâches à réaliser à partir des exigences du client.</div>
+                                </div>
+                                <div class="star-row">
+                                    <span class="star-badge badge-t">T</span>
+                                    <div class="star-text"><strong>Tâche :</strong> Ma mission consistait à formaliser la note de cadrage, structurer la gouvernance de notre équipe pour éviter les conflits ou surcharges, et assurer le suivi de production des différents livrables (maquettes Figma, rédaction des exigences et codage des prototypes) afin de respecter nos jalons de livraison.</div>
+                                </div>
+                                <div class="star-row">
+                                    <span class="star-badge badge-a">A</span>
+                                    <div class="star-text">
+                                        <strong>Action :</strong> Pour structurer efficacement le projet, j'ai déployé des outils professionnels de gestion de projet :
+                                        <ul>
+                                            <li><em>Gouvernance (Matrice RACI) :</em> J'ai participé activement à la création de la matrice des responsabilités de l'équipe, cartographiant précisément pour chaque lot (organisation, maquettage, prototypage) qui était Acteur (R), Approbateur (A), Consulté (C) ou Informé (I). J'ai pris la responsabilité directe (R/A) de la réalisation de plusieurs prototypes métiers, comme la gestion et l'ajout des produits.</li>
+                                            <li><em>Pilotage Agile (Kanban sur Trello) :</em> Nous avons mis en place un tableau Trello structuré en sprints fonctionnels (À faire, En cours, Terminé). J'ai utilisé cet outil pour suivre en temps réel l'avancement des tâches, assigner les cartes aux membres du groupe (MD, RG, TB, A) et lier nos rendus visuels et exigences logicielles directement aux tâches correspondantes.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="star-row">
+                                    <span class="star-badge badge-r">R</span>
+                                    <div class="star-text"><strong>Résultat :</strong> Cette méthodologie de conduite de projet a permis de livrer l'intégralité de l'application et de ses prototypes dans les temps, tout en maintenant une excellente transparence au sein du groupe. L'association du tableau Kanban et de la matrice RACI a évité les goulots d'étranglement et a garanti la conformité finale du projet vis-à-vis du cahier des charges client.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="detail-block">
+                            <h4>Livrables &amp; Traces</h4>
+                            <ul class="proof-list">
+                                <li style="margin-bottom: 12px;">
+                                    <strong>Code source &amp; Gestion de version :</strong> 
+                                    <br><a href="https://github.com/Viridian-exe/sae105-Islande" target="_blank" style="color: var(--accent-color); font-weight: 600; text-decoration: underline;">Dépôt GitHub du Projet — sae105-Islande</a>
+                                </li>
+                                <li style="margin-bottom: 12px;">
+                                    <strong>Suivi de production en direct :</strong> 
+                                    <br><a href="https://trello.com/b/smNq5LqS/1a11ledoareguillouetbarbierbouzid" target="_blank" style="color: var(--accent-color); font-weight: 600; text-decoration: underline;">Tableau Kanban d'équipe sur Trello (Suivi des sprints)</a>
+                                </li>
+                                <li style="margin-bottom: 12px;">
+                                    <strong>Organisation et gouvernance :</strong> 
+                                    <br><a href="https://uniren1-my.sharepoint.com/:x:/g/personal/anatole_barbier_etudiant_univ-rennes_fr/IQDzJas4RGUrSoJ3lxqkW3CZAepayRDuz97bE-5pJdAFSLQ?e=MbJbcO" target="_blank" style="color: var(--accent-color); font-weight: 600; text-decoration: underline;">Matrice des responsabilités RACI officielle (Partage SharePoint)</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </details>
+
+            <!-- COMPÉTENCE 6 -->
+            <!-- COMPÉTENCE 6 -->
+            <details class="skill-fullscreen-wrapper" id="c6">
+                <summary class="skill-master-card">
+                    <span class="skill-number">06</span>
+                    <div class="skill-master-text">
+                        <h3>Collaborer (En équipe informatique)</h3>
+                        <p>Analyse RSE &amp; Stratégie Événementielle — Audit de la transition écologique de BMW et modélisation d'une stratégie de communication numérique pour TPE.</p>
+                    </div>
+                    <span class="open-link">Voir la méthode STAR →</span>
+                </summary>
+                <div class="fullscreen-detail-overlay">
+                    <div class="detail-card">
+                        <div class="detail-card-header">
+                            <h2><span class="accent-bar"></span>Compétence 6 : Collaborer</h2>
+                            <div class="header-actions">
+                                <span class="nav-arrow-btn" onclick="event.preventDefault(); this.closest('details').removeAttribute('open'); document.getElementById('c5').setAttribute('open', 'true');">◀ Précédent</span>
+                                <span class="nav-arrow-btn" onclick="event.preventDefault(); this.closest('details').removeAttribute('open'); document.getElementById('c1').setAttribute('open', 'true');">Suivant ▶</span>
+                                <span class="close-cross" onclick="this.closest('details').removeAttribute('open');">✕</span>
+                            </div>
+                        </div>
+                        <p class="detail-desc-box">Acquérir, développer et exploiter les aptitudes nécessaires pour travailler efficacement et de manière éthique au sein d'une équipe informatique.</p>
+                        <div class="detail-block">
+                            <h4>Enseignements &amp; UE associés</h4>
+                            <div class="tag-container">
+                                <span class="module-tag">R1.09</span><span class="module-tag">R1.12</span><span class="module-tag">R2.09</span><span class="module-tag">R2.10</span><span class="module-tag">SAE 1.06</span>
+                            </div>
+                        </div>
+
+                        <div class="detail-block">
+                            <h4>Démonstration par la méthode STAR</h4>
+                            <div class="star-container">
+                                <div class="star-row">
+                                    <span class="star-badge badge-s">S</span>
+                                    <div class="star-text"><strong>Situation :</strong> Dans le cadre de modules d'ouverture sur l'environnement socio-économique et la communication d'entreprise, j'ai réalisé deux études de cas concrètes. La première portait sur les enjeux écologiques majeurs d'un grand constructeur automobile (BMW), et la seconde sur l'audit de communication et l'organisation d'un événement pour une petite entreprise locale.</div>
+                                </div>
+                                <div class="star-row">
+                                    <span class="star-badge badge-t">T</span>
+                                    <div class="star-text"><strong>Tâche :</strong> Mon objectif était de comprendre les défis stratégiques propres à chaque structure : d'une part, analyser la transition d'un grand groupe face aux contraintes environnementales (RSE) pour améliorer son impact et son image, et d'autre part, concevoir une action de communication ciblée (type événementiel) pour dynamiser la visibilité d'une petite entreprise sur les réseaux sociaux.</div>
+                                </div>
+                                <div class="star-row">
+                                    <span class="star-badge badge-a">A</span>
+                                    <div class="star-text">
+                                        <strong>Action :</strong> Pour mener à bien ces analyses d'entreprise, j'ai adopté une approche analytique et pragmatique :
+                                        <ul>
+                                            <li><em>Étude d'impact environnemental (BMW) :</em> J'ai étudié le positionnement de la marque et les mutations nécessaires de son modèle (électrification, réduction de l'empreinte carbone) pour répondre aux nouvelles normes écologiques et sociétales dans le domaine environnemental.</li>
+                                            <li><em>Stratégie de communication locale :</em> Après avoir brièvement cartographié la présence en ligne d'une petite entreprise, j'ai formalisé une proposition d'action événementielle clé en main pensée spécifiquement pour être relayée sur ses réseaux sociaux afin de fédérer sa communauté.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="star-row">
+                                    <span class="star-badge badge-r">R</span>
+                                    <div class="star-text"><strong>Résultat :</strong> Ces travaux m'ont permis de développer une vision transverse du monde de l'entreprise, de la multinationale à la TPE. J'ai su formaliser des synthèses claires, identifier des leviers de communication pertinents et appréhender l'importance de la responsabilité sociétale et de la communication événementielle dans la stratégie d'une organisation.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="detail-block">
+                            <h4>Livrables &amp; Traces</h4>
+                            <ul class="proof-list">
+                                <li style="margin-bottom: 12px;">
+                                    <strong>Rapport d'étude écrit (BMW &amp; TPE) :</strong> 
+                                    <br><a href="https://uniren1.sharepoint.com/:w:/s/SAE1.06_vdjii7/IQDHI8wAgPCxT5L1sPzEKvijActjoG0MV14R7Ot0uLCx7Ic?e=IGy21A" target="_blank" style="color: var(--accent-color); font-weight: 600; text-decoration: underline;">Dossier d'analyse socio-économique et RSE — Oral2.docx</a>
+                                </li>
+                                <li style="margin-bottom: 12px;">
+                                    <strong>Planification temporelle &amp; Collaboration :</strong> 
+                                    <br><a href="https://uniren1.sharepoint.com/:x:/s/SAE1.06_vdjii7/IQBBeUrgtKlQTYFygis2viGRAZlrZOb7bOu-TxVrcTEJPR8?e=RqO5NF" target="_blank" style="color: var(--accent-color); font-weight: 600; text-decoration: underline;">Tableau des Tâches Hebdomadaires Officiel (SharePoint Université)</a>
+                                </li>
+                                <li style="margin-bottom: 12px;">
+                                    <strong>Soutenance &amp; Présentation :</strong> Diapo oral 2 (Diaporama de présentation pour l'évaluation finale).
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </details>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 - Romain Guillouet. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>

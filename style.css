@@ -1,0 +1,497 @@
+/* ==========================================================================
+   Styles Globaux & Variables
+   ========================================================================== */
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg-color: #f8fafc;
+    --text-color: #1e293b;
+    --accent-color: #0284c7;
+    --accent-light: #e0f2fe;
+    --card-bg: #ffffff;
+    --muted-text: #64748b;
+    --border-color: #e2e8f0;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   Barre de Navigation
+   ========================================================================== */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #0f172a;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #fff;
+}
+
+/* ==========================================================================
+   Header / Accueil
+   ========================================================================== */
+header {
+    background: linear-gradient(135deg, #0f172a 0%, #0284c7 100%);
+    color: #ffffff;
+    padding: 120px 20px 60px 20px;
+    text-align: center;
+}
+
+.header-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 2.6rem;
+    margin-bottom: 5px;
+}
+
+header .subtitle {
+    font-size: 1.2rem;
+    color: #bae6fd;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.intro-box {
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 25px;
+    border-radius: 8px;
+    backdrop-filter: blur(4px);
+    text-align: left;
+    border-left: 4px solid #38bdf8;
+}
+
+/* ==========================================================================
+   Bandeaux de Section (Avec boutons de saut rapide)
+   ========================================================================== */
+.section-banner {
+    background-color: #f1f5f9;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    padding: 15px 20px;
+    margin-top: 40px;
+}
+
+.banner-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-banner h2 {
+    font-size: 1.6rem;
+    color: #0f172a;
+    margin-bottom: 0;
+}
+
+.banner-jump-btn {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #0f172a;
+    background-color: #cbd5e1;
+    padding: 6px 14px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.banner-jump-btn:hover {
+    background-color: var(--accent-color);
+    color: #ffffff;
+}
+
+/* ==========================================================================
+   Structures de Contenu
+   ========================================================================== */
+section {
+    max-width: 1000px;
+    margin: 30px auto 60px auto;
+    padding: 0 20px;
+}
+
+.accent-bar {
+    display: inline-block;
+    width: 6px;
+    height: 26px;
+    background-color: var(--accent-color);
+    margin-right: 12px;
+    border-radius: 2px;
+    vertical-align: middle;
+}
+
+.section-intro {
+    color: var(--muted-text);
+    margin-bottom: 25px;
+}
+
+/* ==========================================================================
+   Timeline (Formations)
+   ========================================================================== */
+.timeline {
+    position: relative;
+    border-left: 3px solid var(--border-color);
+    padding-left: 25px;
+    margin-left: 10px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -32px;
+    top: 6px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    border: 3px solid var(--bg-color);
+}
+
+.time-meta {
+    font-weight: bold;
+    color: var(--accent-color);
+    font-size: 0.95rem;
+}
+
+.time-content h3 {
+    font-size: 1.2rem;
+    color: #0f172a;
+    margin-top: 2px;
+}
+
+.time-content .institution {
+    font-style: italic;
+    color: var(--muted-text);
+    font-size: 0.95rem;
+}
+
+/* ==========================================================================
+   Grille Master & Composants
+   ========================================================================== */
+.skills-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.skill-fullscreen-wrapper {
+    display: block;
+}
+
+.skill-master-card {
+    display: flex;
+    align-items: center;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 18px 25px;
+    cursor: pointer;
+    list-style: none;
+    transition: all 0.2s ease;
+}
+
+.skill-master-card::-webkit-details-marker {
+    display: none;
+}
+
+.skill-master-card:hover {
+    border-color: var(--accent-color);
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(2, 132, 199, 0.06);
+}
+
+.skill-number {
+    width: 45px;
+    height: 38px;
+    line-height: 38px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--accent-color);
+    background-color: var(--accent-light);
+    text-align: center;
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+
+.skill-master-text {
+    padding-left: 20px;
+    flex-grow: 1;
+}
+
+.skill-master-text h3 {
+    font-size: 1.15rem;
+    color: #0f172a;
+}
+
+.skill-master-text p {
+    font-size: 0.95rem;
+    color: var(--muted-text);
+}
+
+.open-link {
+    font-size: 0.9rem;
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+/* ==========================================================================
+   Détails en Plein Écran (Overlay + Boutons)
+   ========================================================================== */
+.fullscreen-detail-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(15, 23, 42, 0.4);
+    backdrop-filter: blur(4px);
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.detail-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 35px;
+    max-width: 850px;
+    width: 100%;
+    max-height: 85vh;
+    overflow-y: auto;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.detail-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.detail-card-header h2 {
+    margin-bottom: 0;
+    font-size: 1.4rem;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-arrow-btn {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--accent-color);
+    background-color: var(--accent-light);
+    padding: 6px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    user-select: none;
+}
+
+.nav-arrow-btn:hover {
+    background-color: var(--accent-color);
+    color: #ffffff;
+}
+
+.close-cross {
+    font-size: 1.4rem;
+    color: #64748b;
+    cursor: pointer;
+    padding: 4px 10px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    user-select: none;
+}
+
+.close-cross:hover {
+    background-color: #f1f5f9;
+    color: #0f172a;
+}
+
+.detail-desc-box {
+    font-size: 1.05rem;
+    color: #334155;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed var(--border-color);
+    font-style: italic;
+}
+
+.detail-block {
+    margin-bottom: 25px;
+}
+
+.detail-block h4 {
+    font-size: 0.85rem;
+    color: #475569;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+}
+
+.tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.module-tag {
+    padding: 4px 12px;
+    background-color: #f1f5f9;
+    border: 1px solid #e2e8f0;
+    color: #475569;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+.proof-list {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.proof-list li {
+    margin-bottom: 8px;
+    color: #334155;
+    font-size: 0.95rem;
+}
+
+/* ==========================================================================
+   Composant Méthode STAR Structure
+   ========================================================================== */
+.star-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #f8fafc;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+
+.star-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.star-badge {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+    border-radius: 6px;
+    flex-shrink: 0;
+    font-size: 1rem;
+}
+
+.badge-s { background-color: #ef4444; }
+.badge-t { background-color: #f59e0b; }
+.badge-a { background-color: #3b82f6; }
+.badge-r { background-color: #10b981; }
+
+.star-text {
+    font-size: 0.95rem;
+    color: #334155;
+    padding-top: 3px;
+}
+
+.star-text ul {
+    margin-top: 8px;
+    padding-left: 20px;
+}
+
+.star-text li {
+    margin-bottom: 4px;
+}
+
+/* ==========================================================================
+   Footer & Responsiveness
+   ========================================================================== */
+footer {
+    background-color: #0f172a;
+    color: #94a3b8;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+}
+
+@media (max-width: 650px) {
+    header h1 { font-size: 2rem; }
+    .banner-container { flex-direction: column; gap: 8px; align-items: flex-start; }
+    .section-banner h2 { font-size: 1.3rem; }
+    .detail-card { padding: 20px; }
+    .detail-card-header { flex-direction: column; align-items: flex-start; gap: 10px; }
+    .header-actions { width: 100%; justify-content: space-between; }
+    .star-row { flex-direction: column; gap: 5px; }
+}
